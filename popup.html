@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Paramètres de l'extension</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            width: 200px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            margin-top: 5px;
+            width: 100%;
+        }
+        button {
+            margin-top: 15px;
+            width: 100%;
+        }
+        p{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<h3>Paramètres</h3>
+<label for="hoursRetention">Temps de rétention en heures :</label>
+<input type="number" id="hoursRetention" min="1" value="1">
+
+<label for="maxTabs">Nombre maximum d'onglets :</label>
+<input type="number" id="maxTabs" min="1" value="16">
+
+<button id="saveButton">Sauvegarder</button>
+
+<p></p>
+
+<script src="popup.js"></script>
+</body>
+</html>
